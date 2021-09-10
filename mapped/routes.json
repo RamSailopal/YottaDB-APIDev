@@ -1,0 +1,27 @@
+[
+      {
+        "uri": "/api/helloworld",
+        "method": "GET",
+        "handler": "helloworld^myRestAPIs"
+      },
+      {
+        "uri": "/api/capitals",
+        "method": "GET",
+        "handler": "capitals^myRestAPIs"
+      },
+      {
+        "uri": "/api/getcapitals/:country",
+        "method": "GET",
+        "handler": "getcapitals^myRestAPIs"
+      },
+      {
+        "uri": "/api/addcapitals",
+        "method": "POST",
+        "handler": "addcapitals^myRestAPIs"
+      },
+      {
+        "uri": "/api/delcapitals/:country",
+        "method": "GET",
+        "handler": "delcapitals^myRestAPIs"
+      },
+]
