@@ -34,7 +34,7 @@ services:
       - ../.ssh:/root/.ssh
       - .theia:/home/theia/.theia
  newman:
-   image: ramb0/newman-ssh
+   image: docker.io/ramb0/newman-ssh
    networks:
       - yottanet
    volumes:
