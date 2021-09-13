@@ -4,7 +4,7 @@
 version: "2"
 services:
  yottamgweb:
-   image: ramb0/yotta-mgweb:latest 
+   image: docker.io/ramb0/yotta-mgweb:latest 
    networks:
       - yottanet
    ports:
