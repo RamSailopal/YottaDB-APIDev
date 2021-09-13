@@ -1,5 +1,7 @@
 # Introduction
 
+![Alt text](globtest.PNG?raw=true "Global Tests")
+
 This repo allows the provision of a development environment through docker that gives you everything that you need to develop API endpoints to YottaDB. There is an IDE to write code as well as a YottaDB global viewer web UI, newman to run API tests and a global entry tester.
 
 # sandbox
