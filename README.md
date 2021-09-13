@@ -1,6 +1,6 @@
 # Introduction
 
-![Alt text](globtest.PNG?raw=true "Global Tests")
+![Alt text](globtests.PNG?raw=true "Global Tests")
 
 This repo allows the provision of a development environment through docker that gives you everything that you need to develop API endpoints to YottaDB. There is an IDE to write code as well as a YottaDB global viewer web UI, newman to run API tests and a global entry tester.
 
@@ -60,6 +60,8 @@ https://github.com/robtweed/mgweb-server/blob/master/TUTORIAL.md
 Examples relating to adding, deleting capital cities/coutries are available to view from then outset.
 
 # Running Tests
+
+![Alt text](apitests.PNG?raw=true "Newman API Tests")
 
 The enviroment is integrated with Newman for testing API calls. A sample test runner file is available called **sand_postman.json** (sandbox) or **dev_postman.json** (dev) When new endpoints are added, add to this postman json file and then run the Newman API tests. THis can be done by:
 
