@@ -74,11 +74,27 @@ The global tests can then be run by clicking on:
     
     **Terminal** -> **Run Task** -> **Global tests** -> **Continue without scanning the task output**
         
-# Global viewer WEb GUI
+# Global viewer Web GUI
 
 Data stored in YottaDB globals can be viewed by navigating to http://ipaddressofdockerserver:8001/*
 
 # SSH Keys
 
 This repo contains ssh keys for demonstation/sandpit purposes only. For a production environment, please set up new, none source controlled keys.
+
+# Credit
+
+Special thanks goes to Rob Tweed for developing the initial mgweb-server implementation:
+
+https://github.com/robtweed/mgweb-server
+
+Also:
+
+Eclipse Theia web IDE:
+
+https://theia-ide.org/
+
+Newman API testing:
+
+https://www.npmjs.com/package/newman
 
