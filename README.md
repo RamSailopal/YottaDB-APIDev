@@ -21,7 +21,7 @@ Provision the stack:
 The dev environment is the same as the sandbox one but for the fact that database storage is persistent.. To provision:
 
       git clone https://github.com/RamSailopal/YottaDB-APIDev.git
-      cd YottaDB-APIDev/sandbox
+      cd YottaDB-APIDev/dev
       export glbviewadd="192.168.240.1"
       
 Make a clean persistent storage directory:
