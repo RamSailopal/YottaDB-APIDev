@@ -47,9 +47,11 @@ Open a compilation window:
 
    **Terminal** -> **Run Task** -> **YottaDB Compiler** -> **Continue without scanning the task output**
    
-Two primarily required for the development of YottaDB APIs. Both files are in the mapped directory:
+This window will deal automatically with any compilation of code as well as process restarts on each save of relevant code.
+   
+Two files are primarily required for the development of YottaDB APIs. Both files are in the mapped directory:
 
-**myRestAPIs.m** - Holds the M code to pull global entries out of the YOttaDB database
+**myRestAPIs.m** - Holds the M code to interact with the YOttaDB database
 
 **routes.json** - Holds the API end points and the relevant M routine/label calls
 
@@ -57,13 +59,13 @@ Further more indepth information is available here:
 
 https://github.com/robtweed/mgweb-server/blob/master/TUTORIAL.md
 
-Examples relating to adding, deleting capital cities/coutries are available to view from then outset.
+Examples relating to adding, deleting capital cities/coutries are available to view/edit from the outset.
 
 # Running Tests
 
 ![Alt text](apitests.PNG?raw=true "Newman API Tests")
 
-The enviroment is integrated with Newman for testing API calls. A sample test runner file is available called **sand_postman.json** (sandbox) or **dev_postman.json** (dev) When new endpoints are added, add to this postman json file and then run the Newman API tests. THis can be done by:
+The enviroment is integrated with Newman for testing API calls. A sample test runner file is available called **sand_postman.json** (sandbox) or **dev_postman.json** (dev) When new endpoints are added, add to this postman json file and then run the Newman API tests. This can be done by:
 
 Clicking on:
 
