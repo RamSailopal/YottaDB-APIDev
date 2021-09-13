@@ -1,0 +1,49 @@
+#
+#       AUTHOR - Raman Sailopal
+#
+version: "2"
+services:
+ yottamgweb:
+   image: ramb0/yotta-mgweb:latest 
+   networks:
+      - yottanet
+   ports:
+      - 8080:8080
+      - 8001:8001
+   mem_limit: 1G
+   volumes:
+      - app-volume:/home/project
+      - ../.ssh:/root/.ssh
+      - ../lsyncd/lsyncd.conf:/etc/lsyncd.conf
+      - ../mapped:/opt/mgweb/mapped
+      - $yottadata:/opt/yottadb
+   environment:
+      - glbviewport=8001
+      - glbviewadd=$glbviewadd
+      - ydb_gbldir=/opt/yottadb/yottadb.gld
+
+ ide:
+   image: docker.io/ramb0/theia-mumps:latest
+   ports:
+      - 3002:3000
+      - 9229:9229
+   networks:
+      - yottanet
+   volumes:
+      - app-volume:/home/project
+      - ../project:/home/yottadb-settings
+      - ../.ssh:/root/.ssh
+      - .theia:/home/theia/.theia
+ newman:
+   image: docker.io/ramb0/newman-ssh
+   networks:
+      - yottanet
+   volumes:
+      - ../mapped:/home/newman
+      - ../.ssh:/root/.ssh
+
+networks:
+    yottanet:
+volumes:
+    app-volume:
+
