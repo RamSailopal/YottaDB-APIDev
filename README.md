@@ -76,7 +76,7 @@ The global tests can then be run by clicking on:
         
 # Global viewer Web GUI
 
-Data stored in YottaDB globals can be viewed by navigating to http://ipaddressofdockerserver:8001/*
+Data stored in YottaDB globals can be viewed by navigating to http://ipaddressofdockerserver:8001
 
 # SSH Keys
 
