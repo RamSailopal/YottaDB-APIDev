@@ -61,6 +61,10 @@ https://github.com/robtweed/mgweb-server/blob/master/TUTORIAL.md
 
 Examples relating to adding, deleting capital cities/coutries are available to view/edit from the outset.
 
+Calls to the API can be made to naviaging to http://ipaddressofdockerserver:8080/api/...
+
+![Alt text](apicall.PNG?raw=true "API calls")
+
 # Running Tests
 
 ![Alt text](apitests.PNG?raw=true "Newman API Tests")
