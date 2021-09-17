@@ -5,8 +5,11 @@ helloworld(req) ;
 capitals(req);
  new res
  S country=""
+ S cnt=0
  F  S country=$O(^CAPITALS(country)) Q:country=""  D
- . set res(country)=^CAPITALS(country)
+ . set cnt=cnt+1
+ . set res(cnt,"country")=country
+ . set res(cnt,"capital")=^CAPITALS(country)
  QUIT $$response^%zmgweb(.res)
 getcapitals(req)
  new country,capital
